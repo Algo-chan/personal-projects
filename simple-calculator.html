@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simple calculator</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      justify-items: center;
+      margin-top: 60px;
+      background-color: rgb(35, 134, 247);
+    }
+    .flex-box {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      width: 255px;
+      box-shadow: 0px 2px 4px gray;
+      text-align: center;
+      border-radius: 15px;
+      background-color: whitesmoke;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 50px 50px 50px 50px;
+      grid-template-rows:  50px 50px 50px 50px;
+      column-gap: 10px;
+      row-gap: 10px;
+      margin: 10px;
+    
+    }
+
+    button {
+      border: none;
+      border-radius: 13px;
+      box-shadow: 0px 1.5px 3px rgb(179, 176, 176);
+      font-size: 20px;
+      color: black;
+      background-color: rgb(247, 188, 79);
+    }
+
+    .button-div {
+      width: 233px;
+    }
+
+    button:active {
+      opacity: 0.6;
+    }
+
+    input {
+      width: 240px;
+      height: 45px;
+      border: none;
+      border-radius: 10px;
+      background-color: rgb(207, 204, 204);
+      margin-top: 20px;
+      box-shadow: 2px 2px 2px rgb(231, 231, 231);
+    }
+
+    .equal-sign {
+      text-align: center;
+      width: 115px;
+      height: 50px;
+      margin: 8px;
+      color: white;
+      background-color: rgb(22, 218, 169);
+    }
+
+    .equal-sign-div {
+      text-align: left;
+    }
+
+    .reverse-sign {
+      color: white;
+      background-color: rgb(250, 53, 18);
+    }
+
+    .num-button {
+      background-color: rgba(133, 212, 248, 0.959);
+
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-box">
+    <div>
+      <input type="number">
+    </div>
+    <div class="grid" >
+      <button><strong>+</strong></button>
+      <button><strong>-</strong></button>
+      <button><strong>x</strong></button>
+      <button><strong>/</strong></button>
+      <button class="num-button"><strong>9</strong></button>
+      <button class="num-button"><strong>8</strong></button>
+      <button class="num-button"><strong>7</strong></button>
+      <button class="num-button"><strong>6</strong></button>
+      <button class="num-button"><strong>5</strong></button>
+      <button class="num-button"><strong>4</strong></button>
+      <button class="num-button"><strong>3</strong></button>
+      <button class="num-button"><strong>2</strong></button>
+      <button class="num-button"><strong>1</strong></button>
+      <button class="num-button"><strong>0</strong></button>
+      <button class="num-button"><strong>.</strong></button>
+      <button class="reverse-sign"><strong>c</strong></button>
+    </div>
+    <div class="equal-sign-div">
+      <button class="equal-sign"><strong>=</strong></button>
+    </div>
+  </div>
+</body>
+</html>

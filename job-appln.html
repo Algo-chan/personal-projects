@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>job-application</title>
+  <style>
+
+    body {
+      justify-items: center;
+      
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 40px 40px;
+      column-gap: 15px;
+      row-gap: 35px;
+      margin: 15px;
+    }
+
+    .flex-box {
+      display: flex;
+      flex-direction: column;
+      width: 655px;
+      box-shadow: 0px 2px 4px gray;
+      padding: 30px;
+      padding-bottom: 40px;
+      padding-top: 0px;
+      margin-top: 40px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input {
+      width: 300px;
+      height: 40px;
+    }
+
+    select {
+      width: 307px;
+      height: 45px;
+    }
+
+    .lable {
+      width: 60px;
+      font-size: 18px;
+    }
+
+    .adress-section{
+      width: 616px;
+      height: 70px;
+      margin: 15px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .adress-section2 {
+      width: 100%;
+      height: 100%;
+    }
+
+    .file {
+      width: 285px;
+      height: 20px;
+      border: 1px solid gray;
+      text-align: center;
+      padding: 11px;
+      
+    }
+
+    .web-word {
+      color: rgb(141, 29, 245);
+      font-size: 18px;
+    }
+    
+    button {
+      color: white;
+      background-color: rgb(22, 136, 243);
+      width: 300px;
+      height: 40px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0px 2px 2px rgb(190, 188, 188);
+      font-size: 18px;
+      margin-top: 25px;
+      transition: opacity 0.5s;
+      margin: 0px;
+      margin-top: 25px;
+      margin-left: 337px;
+      
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="flex-box">
+    <h2>Job Application <span class="web-word">(Web)</span></h2>
+    <div class="grid">
+      <div class="section-div1">
+       <label>First Name</label>
+       <input type="text" required>
+     </div>
+      <div class="section-div1">
+       <label>Last Name</label>
+       <input type="text" required>
+      </div>
+      <div class="section-div1">
+       <label>Email</label><br>
+       <input type="Email" required>
+      </div>
+      <div class="section-div1">
+       <label>Job Rate</label>
+       <select>
+        <option>hourly ($10/hr)</option>
+        <option>Daily($80/day)</option>
+        <option>Weekly($500/week)</option>
+       </select>
+      </div>
+    </div>
+    
+    <div class="adress-section">
+      <label>Adress</label><br>
+      <input class="adress-section2" type="text" required>
+    </div>
+
+    <div class="grid">
+      <div class="section-div1">
+       <label>City</label><br>
+       <input type="text" required>
+      </div>
+      <div class="section-div1">
+       <label>Pincode</label>
+       <input type="text" required>
+      </div>
+      <div class="section-div1">
+       <label>Start Date</label>
+       <input type="date" required>
+      </div>
+      <div class="section-div1">
+       <label for="resume">Upload your CV</label>
+       <input class="file" type="file" placeholder="choose file" name="resume">
+      </div>
+    </div>
+
+    <div>
+      <button type="submit">SUBMIT</button>
+    </div>
+
+  </div>
+</body>
+</html>
